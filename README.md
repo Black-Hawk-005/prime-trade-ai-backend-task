@@ -2,6 +2,32 @@
 
 A scalable REST API with JWT authentication, role-based access control, and a React frontend.
 
+## Screenshots
+
+### Login & Register
+<p align="center">
+  <img src="screenshots/login.png" alt="Login Page" width="49%" />
+  <img src="screenshots/register.png" alt="Register Page" width="49%" />
+</p>
+
+### User Dashboard
+<p align="center">
+  <img src="screenshots/dashboard.png" alt="User Dashboard" width="100%" />
+</p>
+
+### Admin Dashboard (all users' tasks)
+<p align="center">
+  <img src="screenshots/dashboard-admin.png" alt="Admin Dashboard" width="100%" />
+</p>
+
+### Swagger API Documentation
+<p align="center">
+  <img src="screenshots/swagger-1.png" alt="Swagger Docs 1" width="49%" />
+  <img src="screenshots/swagger-2.png" alt="Swagger Docs 2" width="49%" />
+</p>
+
+---
+
 ## Tech Stack
 
 | Layer     | Technology                              |
@@ -35,8 +61,8 @@ A scalable REST API with JWT authentication, role-based access control, and a Re
 ### 1. Clone the repo
 
 ```bash
-git clone <your-repo-url>
-cd prime-trade-ai-backend-developer-task
+git clone https://github.com/Black-Hawk-005/prime-trade-ai-backend-task.git
+cd prime-trade-ai-backend-task
 ```
 
 ### 2. Setup Backend
