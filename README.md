@@ -61,8 +61,8 @@ A scalable REST API with JWT authentication, role-based access control, and a Re
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/Black-Hawk-005/prime-trade-ai-backend-task.git
-cd prime-trade-ai-backend-task
+git clone https://github.com/Black-Hawk-005/taskhub-taskmanager-api.git
+cd taskhub-taskmanager-api
 ```
 
 ### 2. Setup Backend
