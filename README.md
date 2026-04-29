@@ -1,4 +1,4 @@
-# Prime Trade – Task Manager API
+# TaskHub – Task Manager API
 
 A scalable REST API with JWT authentication, role-based access control, and a React frontend.
 
@@ -95,7 +95,7 @@ Seed the database (creates an admin user):
 node prisma/seed.js
 ```
 
-> Default admin credentials: `admin@primetrade.com` / `admin123456`
+> Default admin credentials: `admin@taskhub.com` / `admin123456`
 
 Start the backend:
 
@@ -195,31 +195,3 @@ Task
 - **Input sanitization** via express-validator on all endpoints
 - **Role enforcement** via middleware before every protected route
 - Admin cannot delete or change their own role
-
----
-
-## Scalability Notes
-
-This project is structured to scale in the following ways:
-
-### 1. Modular Architecture
-Each feature (auth, tasks, admin) is a self-contained module with its own controller, routes, and validator. Adding new features means adding a new module folder without touching existing code.
-
-### 2. Horizontal Scaling
-The API is stateless (JWT-based, no server-side sessions). Multiple instances can run behind a **load balancer** (e.g., Nginx, AWS ALB) with no shared state required.
-
-### 3. Database Scaling
-- **Connection pooling** via Supabase's built-in PgBouncer for high concurrency
-- **Read replicas** can be added in Prisma datasource for read-heavy workloads
-
-### 4. Caching (Redis – Optional)
-Frequently accessed data (e.g., user profile, task lists) can be cached in Redis to reduce database load. Cache invalidation on write operations.
-
-### 5. Microservices Path
-The modular structure makes it straightforward to extract modules (e.g., auth service, task service) into separate microservices with an API Gateway in front.
-
-### 6. Rate Limiting
-Add `express-rate-limit` to prevent abuse on auth endpoints (login, register).
-
-### 7. Docker Deployment
-Both backend and frontend can be containerized with Docker and orchestrated via Docker Compose or Kubernetes for production deployment.

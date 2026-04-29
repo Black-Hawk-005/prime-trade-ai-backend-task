@@ -30,7 +30,7 @@ export default function Login() {
   return (
     <div className="auth-container">
       <div className="auth-card">
-        <h1 className="auth-title">Prime Trade</h1>
+        <h1 className="auth-title">TaskHub</h1>
         <p className="auth-subtitle">Sign in to your account</p>
 
         {error && <div className="alert alert-error">{error}</div>}

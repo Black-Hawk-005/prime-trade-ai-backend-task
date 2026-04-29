@@ -31,14 +31,14 @@ app.use(express.urlencoded({ extended: true }));
 
 // API Documentation
 app.use('/api/docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec, {
-  customSiteTitle: 'Prime Trade API Docs',
+  customSiteTitle: 'TaskHub API Docs',
 }));
 
 // Health check
 app.get('/api/health', (req, res) => {
   res.json({
     success: true,
-    message: 'Prime Trade API is running',
+    message: 'TaskHub API is running',
     timestamp: new Date().toISOString(),
     version: '1.0.0',
   });

@@ -4,11 +4,11 @@ const options = {
   definition: {
     openapi: '3.0.0',
     info: {
-      title: 'Prime Trade API',
+      title: 'TaskHub API',
       version: '1.0.0',
       description: 'Scalable REST API with JWT Authentication and Role-Based Access Control.\n\n**How to authenticate:**\n1. Register or login to get a JWT token.\n2. Click the **Authorize** button and enter: `Bearer <your-token>`',
       contact: {
-        name: 'Prime Trade',
+        name: 'TaskHub',
       },
     },
     servers: [

@@ -1,7 +1,7 @@
 {
-  "name": "prime-trade-api",
+  "name": "taskhub-api",
   "version": "1.0.0",
-  "description": "Scalable REST API with Authentication & Role-Based Access Control",
+  "description": "TaskHub – Scalable REST API with Authentication & Role-Based Access Control",
   "main": "src/server.js",
   "scripts": {
     "start": "node src/server.js",

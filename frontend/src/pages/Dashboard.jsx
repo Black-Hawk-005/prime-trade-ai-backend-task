@@ -126,7 +126,7 @@ export default function Dashboard() {
     <div>
       {/* Navbar */}
       <nav className="navbar">
-        <div className="navbar-brand">Prime Trade</div>
+        <div className="navbar-brand">TaskHub</div>
         <div className="navbar-user">
           <span>
             {user?.name}
